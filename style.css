@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+  margin: 0;
+  color: #333;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .video-container {
+    height: 100%; /* Set full height for mobile */
+  }
+
+  .bg-video {
+    object-position: center; /* Center the video */
+  }
+}
+
+/* Tablet Devices */
+@media (max-width: 1024px) {
+  .video-container {
+    height: 100%; /* Set full height for tablets */
+  }
+}
+/* Hide the dark mode video initially */
+#bg-video-dark {
+  display: none;
+}
+
+.my-image {
+  height: 300px;
+  border-radius: 90%;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  color: rgb(0, 0, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+
+/* Animated Text */
+.name-header {
+  font-size: 40px; /* Initial font size */
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Text color */
+  animation: zoom 2s infinite; /* Apply zoom animation */
+}
+
+/* Keyframe Animation for Zooming Text */
+@keyframes zoom {
+  0% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.1); /* Slightly increase size */
+  }
+  100% {
+    transform: scale(1); /* Decrease back to normal size */
+  }
+}
+
+.hero h2 span {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background: #5f348e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  top: 1%;
+  right: 1%;
+  transition: transform 0.3s ease;
+  position: fixed;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #6a11cb;
+}
+
+/* Arrow Container */
+.arrow-container {
+  position: absolute;
+
+  left: 50%; /* Center the arrow horizontally */
+  transform: translateX(-50%);
+  animation: bounce 1.5s infinite ease-in-out; /* Add bounce animation */
+}
+
+/* Downward Arrow */
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent; /* Left side transparent */
+  border-right: 10px solid transparent; /* Right side transparent */
+  border-top: 20px solid #000000; /* Arrow color and size */
+  border-radius: 5px; /* Optional: to make the arrow edges rounded */
+}
+
+/* Keyframe Animation for Bouncing Arrow */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0); /* Arrow in original position */
+  }
+  50% {
+    transform: translateY(15px); /* Moves down and back */
+  }
+}
+
+/*-----------------------------------Sections---------------------------*/
+.about h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 180px;
+  margin-bottom: 0px;
+}
+.about p {
+  font-family: "Hind Siliguri", serif;
+  font-weight: 900px;
+  font-size: 25px;
+  font-style: normal;
+  margin: 0 20px;
+}
+
+.work h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.work p {
+  font-family: "Hind Siliguri", serif;
+  font-weight: 900px;
+  font-size: 25px;
+  font-style: normal;
+  margin: 0 20px;
+}
+footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  background: #333;
+  color: white;
+}
+
+/*------------------------------------------- Dark Mode ---------------------------------------------------*/
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .hero h2 span {
+  color: #39ff14;
+}
+
+body.dark-mode footer {
+  background: #000;
+}
+
+.dark-mode .hero,
+.dark-mode .name-header {
+  color: aliceblue;
+}
+
+/* Show Dark Mode Video */
+body.dark-mode #bg-video-dark {
+  display: block;
+}
+
+body.dark-mode #bg-video-light {
+  display: none;
+}
