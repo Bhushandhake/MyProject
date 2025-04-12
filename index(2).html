@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Excellence | Professional Math Tutoring</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4F46E5",
+              secondary: "#0EA5E9",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Poppins', sans-serif;
+      }
+      .hero-section {
+          background-image: url('https://readdy.ai/api/search-image?query=Beautiful%20mathematical%20equations%20and%20formulas%20floating%20in%20space%20with%20soft%20blue%20gradient%20background%2C%20elegant%20and%20professional%2C%20subtle%20mathematical%20patterns%2C%20perfect%20for%20educational%20website%20hero%20background%2C%20high%20quality%2C%20clean%20design&width=1920&height=800&seq=1&orientation=landscape');
+          background-size: cover;
+          background-position: center;
+      }
+      input:focus, textarea:focus {
+          outline: none;
+          border-color: #4F46E5;
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center">
+          <a href="#" class="text-3xl font-['Pacifico'] text-primary mr-10"
+            >Prakhar pathak</a
+          >
+          <nav class="hidden md:flex space-x-8">
+            <a href="#" class="text-primary font-medium">Home</a>
+            <a
+              href="#"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >Courses</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >Resources</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >Contact</a
+            >
+          </nav>
+        </div>
+        <div>
+          <button
+            class="bg-white text-primary border border-primary px-5 py-2 !rounded-button hover:bg-gray-50 transition-colors whitespace-nowrap"
+          >
+            Log In
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative">
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-transparent"
+      ></div>
+      <div class="container mx-auto px-4 py-24 relative">
+        <div class="max-w-2xl text-white">
+          <h1 class="text-5xl font-bold mb-6">
+            Unlock Your Mathematical Potential
+          </h1>
+          <p class="text-xl mb-8">
+            With 10+ years of teaching experience, I help students of all levels
+            master mathematics through personalized instruction and proven
+            methods.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <button
+              class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap"
+            >
+              View Courses
+            </button>
+            <!-- <button
+              class="bg-white text-primary px-6 py-3 !rounded-button hover:bg-gray-100 transition-colors whitespace-nowrap"
+            >
+              Book a Session
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">Specialized Math Courses</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Explore our comprehensive range of mathematics courses designed to
+            build strong foundations and advanced skills.
+          </p>
+        </div>
+
+        <div class="mb-8 flex flex-wrap justify-center gap-4">
+          <button
+            class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap"
+          >
+            All Levels
+          </button>
+          <button
+            class="bg-white text-gray-700 border border-gray-200 px-4 py-2 !rounded-button hover:bg-gray-50 whitespace-nowrap"
+          >
+            Elementary
+          </button>
+          <button
+            class="bg-white text-gray-700 border border-gray-200 px-4 py-2 !rounded-button hover:bg-gray-50 whitespace-nowrap"
+          >
+            Middle School
+          </button>
+          <button
+            class="bg-white text-gray-700 border border-gray-200 px-4 py-2 !rounded-button hover:bg-gray-50 whitespace-nowrap"
+          >
+            High School
+          </button>
+          <button
+            class="bg-white text-gray-700 border border-gray-200 px-4 py-2 !rounded-button hover:bg-gray-50 whitespace-nowrap"
+          >
+            College
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Course 1 -->
+          <div
+            class="bg-white rounded shadow-md overflow-hidden border border-gray-100 transition-transform hover:translate-y-[-5px]"
+          >
+            <div class="h-48 bg-blue-50 flex items-center justify-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center text-primary"
+              >
+                <i class="ri-numbers-line ri-3x"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <span
+                class="text-xs font-semibold bg-blue-100 text-blue-800 py-1 px-2 rounded-full"
+                >Elementary</span
+              >
+              <h3 class="text-xl font-bold mt-3 mb-2">
+                Foundations of Mathematics
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Building essential number sense, arithmetic skills, and
+                problem-solving foundations for young learners.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-500">Grades 3-5</span>
+                <button
+                  class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap"
+                >
+                  Learn More
+                  <i class="ri-arrow-right-line ml-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 2 -->
+          <div
+            class="bg-white rounded shadow-md overflow-hidden border border-gray-100 transition-transform hover:translate-y-[-5px]"
+          >
+            <div class="h-48 bg-indigo-50 flex items-center justify-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center text-primary"
+              >
+                <i class="ri-functions-line ri-3x"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <span
+                class="text-xs font-semibold bg-indigo-100 text-indigo-800 py-1 px-2 rounded-full"
+                >Middle School</span
+              >
+              <h3 class="text-xl font-bold mt-3 mb-2">
+                Pre-Algebra & Algebra Basics
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Transitioning from arithmetic to algebraic thinking with
+                variables, equations, and problem-solving.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-500">Grades 6-8</span>
+                <button
+                  class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap"
+                >
+                  Learn More
+                  <i class="ri-arrow-right-line ml-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 3 -->
+          <div
+            class="bg-white rounded shadow-md overflow-hidden border border-gray-100 transition-transform hover:translate-y-[-5px]"
+          >
+            <div class="h-48 bg-purple-50 flex items-center justify-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center text-primary"
+              >
+                <i class="ri-compasses-2-line ri-3x"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <span
+                class="text-xs font-semibold bg-purple-100 text-purple-800 py-1 px-2 rounded-full"
+                >High School</span
+              >
+              <h3 class="text-xl font-bold mt-3 mb-2">
+                Geometry & Trigonometry
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Exploring spatial relationships, proofs, and trigonometric
+                concepts for practical applications.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-500">Grades 9-10</span>
+                <button
+                  class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap"
+                >
+                  Learn More
+                  <i class="ri-arrow-right-line ml-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 4 -->
+          <div
+            class="bg-white rounded shadow-md overflow-hidden border border-gray-100 transition-transform hover:translate-y-[-5px]"
+          >
+            <div class="h-48 bg-green-50 flex items-center justify-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center text-primary"
+              >
+                <i class="ri-calculator-line ri-3x"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <span
+                class="text-xs font-semibold bg-green-100 text-green-800 py-1 px-2 rounded-full"
+                >High School</span
+              >
+              <h3 class="text-xl font-bold mt-3 mb-2">
+                Advanced Algebra & Precalculus
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Mastering functions, sequences, and foundational concepts needed
+                for calculus and higher mathematics.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-500">Grades 11-12</span>
+                <button
+                  class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap"
+                >
+                  Learn More
+                  <i class="ri-arrow-right-line ml-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 5 -->
+          <div
+            class="bg-white rounded shadow-md overflow-hidden border border-gray-100 transition-transform hover:translate-y-[-5px]"
+          >
+            <div class="h-48 bg-red-50 flex items-center justify-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center text-primary"
+              >
+                <i class="ri-bar-chart-grouped-line ri-3x"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <span
+                class="text-xs font-semibold bg-red-100 text-red-800 py-1 px-2 rounded-full"
+                >College</span
+              >
+              <h3 class="text-xl font-bold mt-3 mb-2">Calculus & Analysis</h3>
+              <p class="text-gray-600 mb-4">
+                Developing a deep understanding of limits, derivatives,
+                integrals, and their applications in sciences.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-500">College Level</span>
+                <button
+                  class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap"
+                >
+                  Learn More
+                  <i class="ri-arrow-right-line ml-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 6 -->
+          <div
+            class="bg-white rounded shadow-md overflow-hidden border border-gray-100 transition-transform hover:translate-y-[-5px]"
+          >
+            <div class="h-48 bg-yellow-50 flex items-center justify-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center text-primary"
+              >
+                <i class="ri-pie-chart-line ri-3x"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <span
+                class="text-xs font-semibold bg-yellow-100 text-yellow-800 py-1 px-2 rounded-full"
+                >College</span
+              >
+              <h3 class="text-xl font-bold mt-3 mb-2">
+                Statistics & Probability
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Learning data analysis, statistical inference, and probability
+                theory for research and decision-making.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-500">College Level</span>
+                <button
+                  class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap"
+                >
+                  Learn More
+                  <i class="ri-arrow-right-line ml-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaching Features -->
+    <!-- <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">My Teaching Approach</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            I believe in making mathematics accessible, engaging, and relevant
+            through these core teaching principles.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <!-- <div class="bg-white p-8 rounded shadow-md text-center">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="ri-presentation-line text-primary ri-lg"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Interactive Learning</h3>
+            <p class="text-gray-600">
+              Engaging sessions that combine visual demonstrations, hands-on
+              problem solving, and real-world applications to make abstract
+              concepts concrete.
+            </p>
+          </div> --> -->
+
+          <!-- Feature 2 -->
+          <!-- <div class="bg-white p-8 rounded shadow-md text-center">
+            <div
+              class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="ri-user-voice-line text-primary ri-lg"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">One-on-One Support</h3>
+            <p class="text-gray-600">
+              Personalized attention that identifies your unique learning style
+              and adapts teaching methods to address specific challenges and
+              build confidence.
+            </p>
+          </div> -->
+
+          <!-- Feature 3 -->
+          <!-- <div class="bg-white p-8 rounded shadow-md text-center">
+            <div
+              class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="ri-file-list-3-line text-primary ri-lg"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Practice Materials</h3>
+            <p class="text-gray-600">
+              Comprehensive worksheets, practice problems, and study guides
+              tailored to reinforce concepts and prepare for exams with targeted
+              exercises.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Resources Section -->
+    <!-- <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">Learning Resources</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Access a variety of free and premium materials to support your
+            mathematical journey.
+          </p>
+        </div> -->
+
+        <div class="mb-8 flex flex-wrap justify-center gap-4">
+          <button
+            class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap"
+          >
+            All Resources
+          </button>
+          <button
+            class="bg-white text-gray-700 border border-gray-200 px-4 py-2 !rounded-button hover:bg-gray-50 whitespace-nowrap"
+          >
+            Worksheets
+          </button>
+          <button
+            class="bg-white text-gray-700 border border-gray-200 px-4 py-2 !rounded-button hover:bg-gray-50 whitespace-nowrap"
+          >
+            Video Tutorials
+          </button>
+          <button
+            class="bg-white text-gray-700 border border-gray-200 px-4 py-2 !rounded-button hover:bg-gray-50 whitespace-nowrap"
+          >
+            Study Guides
+          </button>
+          <button
+            class="bg-white text-gray-700 border border-gray-200 px-4 py-2 !rounded-button hover:bg-gray-50 whitespace-nowrap"
+          >
+            Practice Problems
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Resource 1 -->
+          <div
+            class="bg-white rounded shadow-sm overflow-hidden border border-gray-100"
+          >
+            <div class="h-40 bg-blue-50 flex items-center justify-center">
+              <div
+                class="w-16 h-16 flex items-center justify-center text-primary"
+              >
+                <i class="ri-file-paper-2-line ri-2x"></i>
+              </div>
+            </div>
+            <div class="p-4">
+              <span
+                class="text-xs font-semibold bg-blue-100 text-blue-800 py-1 px-2 rounded-full"
+                >Worksheet</span
+              >
+              <h3 class="text-lg font-bold mt-3 mb-1">Algebra Fundamentals</h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Comprehensive practice with equations, inequalities, and word
+                problems.
+              </p>
+              <button
+                class="text-primary text-sm font-medium flex items-center !rounded-button whitespace-nowrap"
+              >
+                Download PDF
+                <i class="ri-download-line ml-1"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Resource 2 -->
+          <div
+            class="bg-white rounded shadow-sm overflow-hidden border border-gray-100"
+          >
+            <div class="h-40 bg-indigo-50 flex items-center justify-center">
+              <div
+                class="w-16 h-16 flex items-center justify-center text-primary"
+              >
+                <i class="ri-video-line ri-2x"></i>
+              </div>
+            </div>
+            <div class="p-4">
+              <span
+                class="text-xs font-semibold bg-indigo-100 text-indigo-800 py-1 px-2 rounded-full"
+                >Video</span
+              >
+              <h3 class="text-lg font-bold mt-3 mb-1">Calculus: Derivatives</h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Step-by-step video tutorial on derivative rules and
+                applications.
+              </p>
+              <button
+                class="text-primary text-sm font-medium flex items-center !rounded-button whitespace-nowrap"
+              >
+                Watch Video
+                <i class="ri-play-line ml-1"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Resource 3 -->
+          <div
+            class="bg-white rounded shadow-sm overflow-hidden border border-gray-100"
+          >
+            <div class="h-40 bg-green-50 flex items-center justify-center">
+              <div
+                class="w-16 h-16 flex items-center justify-center text-primary"
+              >
+                <i class="ri-book-open-line ri-2x"></i>
+              </div>
+            </div>
+            <div class="p-4">
+              <span
+                class="text-xs font-semibold bg-green-100 text-green-800 py-1 px-2 rounded-full"
+                >Study Guide</span
+              >
+              <h3 class="text-lg font-bold mt-3 mb-1">Geometry Essentials</h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Complete guide to geometric theorems, proofs, and formulas.
+              </p>
+              <button
+                class="text-primary text-sm font-medium flex items-center !rounded-button whitespace-nowrap"
+              >
+                Access Guide
+                <i class="ri-arrow-right-line ml-1"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Resource 4 -->
+          <div
+            class="bg-white rounded shadow-sm overflow-hidden border border-gray-100"
+          >
+            <div class="h-40 bg-red-50 flex items-center justify-center">
+              <div
+                class="w-16 h-16 flex items-center justify-center text-primary"
+              >
+                <i class="ri-question-line ri-2x"></i>
+              </div>
+            </div>
+            <div class="p-4">
+              <span
+                class="text-xs font-semibold bg-red-100 text-red-800 py-1 px-2 rounded-full"
+                >Practice</span
+              >
+              <h3 class="text-lg font-bold mt-3 mb-1">Statistics Problems</h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Collection of statistics problems with detailed solutions.
+              </p>
+              <button
+                class="text-primary text-sm font-medium flex items-center !rounded-button whitespace-nowrap"
+              >
+                Start Practice
+                <i class="ri-arrow-right-line ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <button
+            class="bg-white text-primary border border-primary px-6 py-3 !rounded-button hover:bg-gray-50 transition-colors whitespace-nowrap"
+          >
+            View All Resources
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <!-- <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">Student Success Stories</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Hear from students who have transformed their mathematical
+            understanding and academic performance.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-16 h-16 bg-gray-200 rounded-full overflow-hidden mr-4"
+              >
+                <img
+                  src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20young%20female%20student%20with%20a%20friendly%20smile%2C%20natural%20lighting%2C%20soft%20background%2C%20high%20quality%20portrait&width=200&height=200&seq=2&orientation=squarish"
+                  alt="Student"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div> -->
+                <!-- <h3 class="font-bold text-lg">Emily Richardson</h3>
+                <p class="text-gray-600 text-sm">
+                  AP Calculus Student, Grade 12
+                </p>
+              </div>
+            </div>
+            <div class="relative">
+              <i -->
+                <!-- class="ri-double-quotes-l text-gray-200 text-6xl absolute -top-4 -left-2"
+              ></i>
+              <p class="text-gray-700 relative z-10 pl-6">
+                After struggling with calculus for months, I was on the verge of
+                giving up. The personalized approach completely changed my
+                perspective. The way complex concepts were broken down made
+                everything click. I went from barely passing to scoring a 5 on
+                my AP exam. The confidence I gained has inspired me to pursue
+                engineering in college.
+              </p> -->
+            <!-- </div>
+            <div class="flex justify-center mt-8">
+              <button class="w-3 h-3 rounded-full bg-primary mx-1"></button>
+              <button class="w-3 h-3 rounded-full bg-gray-300 mx-1"></button>
+              <button class="w-3 h-3 rounded-full bg-gray-300 mx-1"></button>
+              <button class="w-3 h-3 rounded-full bg-gray-300 mx-1"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Have questions or ready to start your mathematical journey? Reach
+            out today.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <!-- Contact Form -->
+          <div>
+            <form>
+              <div class="mb-6">
+                <label for="name" class="block text-gray-700 mb-2"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="email" class="block text-gray-700 mb-2"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="Your email"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="subject" class="block text-gray-700 mb-2"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="What is this regarding?"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block text-gray-700 mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap w-full"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="bg-gray-50 p-8 rounded">
+            <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+
+            <div class="mb-6">
+              <h4 class="font-medium text-gray-800 mb-2">Office Hours</h4>
+              <p class="text-gray-600">Monday - Saturday: 2:00 PM - 8:00 PM</p>
+              <!-- <p class="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p> -->
+              <p class="text-gray-600">Sunday: Closed</p>
+            </div>
+
+            <div class="mb-6">
+              <h4 class="font-medium text-gray-800 mb-2">Email Address</h4>
+              <p class="text-gray-600">prakhar54pathak@gmail.com</p>
+              <!-- <p class="text-gray-600">support@mathexcellence.edu</p> -->
+            </div>
+
+            <div class="mb-6">
+              <h4 class="font-medium text-gray-800 mb-2">Phone Number</h4>
+              <p class="text-gray-600">7000137564</p>
+              <p class="text-gray-600"> 9685849081</p>
+            </div>
+
+            <div>
+              <h4 class="font-medium text-gray-800 mb-2">Location</h4>
+              <p class="text-gray-600">Ews 757 </p>
+              <p class="text-gray-600">Ramnagar</p>
+              <p class="text-gray-600">Jaswadi Road, Khandwa, Madhya Pradesh 450001</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <!-- Logo and About -->
+          <!-- <div>
+            <a
+              href="#"
+              class="text-2xl font-['Pacifico'] text-white mb-4 inline-block"
+              >logo</a
+            >
+            <p class="text-gray-400 mb-4">
+              Dedicated to making mathematics accessible, engaging, and
+              achievable for students of all levels.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full"
+                >
+                  <i class="ri-facebook-fill"></i>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full"
+                >
+                  <i class="ri-twitter-x-fill"></i>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full"
+                >
+                  <i class="ri-instagram-fill"></i>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full"
+                >
+                  <i class="ri-youtube-fill"></i>
+                </div>
+              </a>
+            </div>
+          </div> -->
+
+          <!-- Quick Links -->
+          <!-- <div>
+            <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Resources</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div> -->
+
+          <!-- Resources -->
+          <!-- <div>
+            <h3 class="text-lg font-bold mb-4">Resources</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Worksheets</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Video Tutorials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Study Guides</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Practice Problems</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <!-- <div>
+            <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+            <p class="text-gray-400 mb-4">
+              Subscribe to receive updates, math tips, and special offers.
+            </p>
+            <form>
+              <div class="flex">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="px-4 py-2 w-full border-none rounded-l focus:outline-none text-gray-800"
+                />
+                <button
+                  type="submit"
+                  class="bg-primary text-white px-4 py-2 !rounded-r-button whitespace-nowrap"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div --> 
+          <!-- class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center"
+        <!
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2025 Math Excellence. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white text-sm transition-colors"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white text-sm transition-colors"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white text-sm transition-colors"
+              >Cookie Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <hr class="border-gray-800 mb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+    <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 Bhushan Dhake. All rights reserved.</p>
+    <div class="flex space-x-6">
+    <a target="_blank" href="https://github.com/Bhushandhake" class="text-gray-400 hover:text-white transition-colors">
+    <i class="ri-github-fill"></i>
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/bhushan-dhake-a104ab274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-gray-400 hover:text-white transition-colors">
+    <i class="ri-linkedin-fill"></i>
+    </a>
+    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+    <i class="ri-twitter-fill"></i>
+    </a>  -->
+<a target="_blank" href="https://www.instagram.com/prakharpathak_54?igsh=MW9wN3g2YjRqdmZjMQ==" class="text-gray-400 hover:text-white transition-colors">
+    <i class="ri-instagram-fill"></i>
+    <a target="_blank" href="https://www.linkedin.com/me?trk=p_mwlite_profile_self-secondary_nav" class="text-gray-400 hover:text-white transition-colors">
+    <i class="ri-linkedin-fill"></i>
+    </a>
+    <a target="_blank" href="https://wa.me/qr/EPXRVXEB5T3OF1" class="text-gray-400 hover:text-white transition-colors">
+      <i class="ri-whatsapp-fill"></i>
+      </a>
+    
+  </body>
+  </body>
+</html 
